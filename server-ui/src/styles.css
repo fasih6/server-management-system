@@ -1,0 +1,167 @@
+/* -------------------------------------------------------------
+   GLOBAL
+------------------------------------------------------------- */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+@import "ngx-toastr/toastr";
+
+body {
+  background: #f4f6f9;
+  padding: 20px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* -------------------------------------------------------------
+   CARD + WRAPPER
+------------------------------------------------------------- */
+.table-wrapper {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  background-color: #5fafe1;
+}
+
+.table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.table-title h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.table-title .btn {
+  margin-left: 8px;
+}
+
+/* -------------------------------------------------------------
+   TABLE DESIGN
+------------------------------------------------------------- */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.table thead tr th {
+  background: #eef1f5;
+  border: none;
+  font-weight: 600;
+  padding: 14px;
+}
+
+.table tbody tr {
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background: #f7faff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table tbody td {
+  padding: 14px;
+  vertical-align: middle;
+  border-top: none !important;
+}
+
+/* -------------------------------------------------------------
+   STATUS BADGES
+------------------------------------------------------------- */
+.badge-success {
+  background-color: #27ae60 !important;
+}
+
+.badge-danger {
+  background-color: #e74c3c !important;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* -------------------------------------------------------------
+   ACTION ICONS
+------------------------------------------------------------- */
+i.fa,
+i.fas,
+i.far,
+i.material-icons {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+/* Delete button */
+.delete i {
+  color: #e74c3c;
+}
+
+/* Ping loader */
+.fa-spinner {
+  font-size: 20px !important;
+}
+
+/* -------------------------------------------------------------
+   BUTTONS
+------------------------------------------------------------- */
+.btn {
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 6px 14px;
+}
+
+.action-btn {
+  height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 14px !important;
+  font-size: 14px !important;
+  border-radius: 6px !important;
+  gap: 6px;
+}
+
+select.action-btn {
+  padding-right: 30px !important;
+  height: 38px !important;
+}
+
+.action-btn i,
+.action-btn .material-icons {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* -------------------------------------------------------------
+   MODAL
+------------------------------------------------------------- */
+.modal-content {
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.modal-footer {
+  border-top: none;
+}
