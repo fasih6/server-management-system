@@ -1,0 +1,25 @@
+services:
+  postgres:
+    container_name: postgres-sql-server
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: server_db
+    volumes:
+      - serverdb_data:/var/lib/postgresql/data  # ✅ correct
+    ports:
+      - 5433:5432
+    networks:
+      - spring-demo
+    restart: unless-stopped
+
+
+networks:
+  spring-demo:
+    driver: bridge
+
+volumes:
+  serverdb_data:
+    driver: local

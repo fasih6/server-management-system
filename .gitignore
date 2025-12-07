@@ -1,0 +1,59 @@
+##############################
+# IntelliJ / JetBrains
+##############################
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+##############################
+# Java / Spring Boot
+##############################
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+##############################
+# Environment & Secrets
+##############################
+# *.env
+# application-*.properties
+# application-*.yml
+# application-*.yaml
+# .env.local
+# .env.*.local
+
+##############################
+# Node / Angular
+##############################
+# Node modules
+node_modules/
+
+# Dist folder (Angular build output)
+dist/
+dist*/
+
+# Angular cache
+.angular/
+.angular/cache/
+
+# NPM / Yarn
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+##############################
+# VSCode (if used)
+##############################
+.vscode/
+
+##############################
+# Misc
+##############################
+*.class
+*.swp
+*.swo
+*.tmp
+*.cache
